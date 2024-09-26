@@ -5,51 +5,282 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Music Website</title>
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container styling */
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        /* Heading styling */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* Main styling */
+        main {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fff;
+            margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Singer Section Styling */
+        .singer-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background: #f9f9f9;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .singer-section h2 {
+            font-size: 1.8em;
+            color: #0073e6;
+        }
+
+        .singer-section img {
+            float: left;
+            margin-right: 20px;
+            width: 200px;
+            height: auto;
+        }
+
+        .singer-section table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+
+        .singer-section th, .singer-section td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .singer-section th {
+            background: #333;
+            color: #fff;
+        }
+
+        .singer-section td {
+            background: #f4f4f4;
+        }
+
+        .singer-section p {
+            margin: 10px 0;
+        }
+
+        /* Social Media Table */
+        .social-table-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-table {
+            border-collapse: collapse;
+        }
+
+        .social-table td {
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .social-table a {
+            text-decoration: none;
+            color: #000;
+            font-size: 24px;
+        }
+
+        .social-table a:hover {
+            color: #0073e6;
+        }
+
+        .social-table a i {
+            margin: 0 5px;
+        }
+
+        /* Clearfix for floated elements */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
 </head>
 
 <body>
-    <header></header>
-    <main>
-        <div>
-            <h1>INTRODUCTION</h1>
-            <p> This website provides you popular songs of many<b> Singers.</b>
-                This website contains best quality mp3 songs without any problem.
-                You can also download these mp3 songs.
-                <h3>Advantages of listening music</h3>
-                <br>Music is a part of all of our lives, from when we’re growing up to when we’re old. We grow up to the sound of our mothers singing us lullabies so that we’d go to sleep. Music is one of the most calming and soothing things if you let it be. It comes from melodies and tunes strung together by people who sing and play musical instruments. The power of music shows in the simplest of things, such as when you absentmindedly tap your foot to a beat or hum a tune unknowingly
-                <br>Music is not only created by people, but it is also all around us in nature. In the mornings, when the crickets and the birds chirp, it is music. The loud sound of the waves in the ocean swishing, the whistle in the wind, and the sound of trees and leaves rustling are all their own forms of music.
-            </p>
-                   <pre>     <h2>Singers</h2></pre>
-            <br><b> Click on the singer's image to open the singer's song page.</b>
-            <ul>
-                <br><a href="https://shikharyadav16.github.io/songswithalan.io/"><img
-                        src="https://i.pinimg.com/originals/4e/a8/b8/4ea8b86a2768f7adf093cdff53ab2e61.png" width="200"
-                        alt="error!"></a>
-                <li>
-                    <h3>
-                        <pre><b> Alan Walker</b></pre>
-                    </h3>
-                </li>
-                <a href="https://shikharyadav16.github.io/songswithbieber.io/"><img
-                        src="https://www.parttimely.com/wp-content/uploads/2018/10/desktop-used-pics-of-justin-bieber.jpg"
-                        width="200" alt="error!"></a>
-                <li>
-                    <h3>
-                        <pre><b> Justin Bieber</b></pre>
-                    </h3>
-                </li>
+    <header>
+        <h1>Welcome to the Music World</h1>
+    </header>
 
+    <main>
+        <div class="container">
+            <h1>Introduction</h1>
+            <p>This website provides you with popular songs of many <b>Singers.</b> This website contains the best quality mp3 songs without any problem. You can also download these mp3 songs.</p>
+            <h3>Advantages of listening to music</h3>
+            <p>Music is a part of all of our lives, from when we’re growing up to when we’re old. We grow up to the sound of our mothers singing us lullabies so that we’d go to sleep. Music is one of the most calming and soothing things if you let it be. It comes from melodies and tunes strung together by people who sing and play musical instruments. The power of music shows in the simplest of things, such as when you absentmindedly tap your foot to a beat or hum a tune unknowingly.</p>
+            <p>Music is not only created by people, but it is also all around us in nature. In the mornings, when the crickets and the birds chirp, it is music. The loud sound of the waves in the ocean swishing, the whistle in the wind, and the sound of trees and leaves rustling are all their own forms of music.</p>
+
+            <h2>Singers</h2>
+            <p><b>Click on the singer's image to open the singer's song page.</b></p>
+
+            <!-- Singer Sections -->
+            <div class="singer-section clearfix">
+                <a href="https://shikharyadav16.github.io/songswithalan.io/">
+                    <img src="https://i.pinimg.com/originals/4e/a8/b8/4ea8b86a2768f7adf093cdff53ab2e61.png" alt="Alan Walker">
+                </a>
+                <h2>Alan Walker</h2>
+                <p>Alan Walker is a British-born Norwegian DJ, YouTuber, and record producer. He is best known for his 2015 single "Faded", which received platinum certifications in 14 countries. His musical style mainly consists of electro house and progressive house.</p>
+                <h3>Famous Songs</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Song</th>
+                            <th>Year</th>
+                            <th>Genre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Faded</td>
+                            <td>2015</td>
+                            <td>Electro House</td>
+                        </tr>
+                        <tr>
+                            <td>Alone</td>
+                            <td>2016</td>
+                            <td>Progressive House</td>
+                        </tr>
+                        <tr>
+                            <td>Darkside</td>
+                            <td>2018</td>
+                            <td>Progressive House</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="singer-section clearfix">
+                <a href="https://shikharyadav16.github.io/songswithbieber.io/">
+                    <img src="https://i.guim.co.uk/img/media/30551a7442e095516546cd97a48a475cef7b8dd0/0_20_2916_1749/master/2916.jpg?width=1900&dpr=2&s=none" alt="Justin Bieber">
+                </a>
+                <h2>Justin Bieber</h2>
+                <p>Justin Bieber is a Canadian singer-songwriter known for his teen-pop and R&B-influenced pop music. He was discovered on YouTube and rose to fame with his debut album "My World 2.0" in 2010. His music explores themes of love, heartbreak, and youth.</p>
+                <h3>Famous Songs</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Song</th>
+                            <th>Year</th>
+                            <th>Genre</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Baby</td>
+                            <td>2010</td>
+                            <td>Pop</td>
+                        </tr>
+                        <tr>
+                            <td>Sorry</td>
+                            <td>2015</td>
+                            <td>Dancehall Pop</td>
+                        </tr>
+                        <tr>
+                            <td>Love Yourself</td>
+                            <td>2015</td>
+                            <td>Acoustic Pop</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="singer-section clearfix">
                 <a href="https://shikharyadav16.github.io/popularmusic.io/">
-                    <img src="https://w7.pngwing.com/pngs/303/736/png-transparent-pop-music-disco-song-popular-music-top-pops-miscellaneous-text-logo-thumbnail.png" width="200" alt="error!"></a>
-                <li>
-                    <h3>
-                        <pre><b> Popular Songs</b></pre>
-                    </h3>
-                </li>
-            </ul>
+                    <img src="https://w7.pngwing.com/pngs/303/736/png-transparent-pop-music-disco-song-popular-music-top-pops-miscellaneous-text-logo-thumbnail.png" alt="Popular Songs">
+                </a>
+                <h2>Popular Songs</h2>
+                <p>Explore a wide range of popular songs from various artists and genres. From timeless classics to the latest chart-toppers, dive into the world of music that has shaped cultures and entertained generations.</p>
+                <h3>Famous Songs</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Song</th>
+                            <th>Artist</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Blinding Lights</td>
+                            <td>The Weeknd</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr>
+                            <td>Shape of You</td>
+                            <td>Ed Sheeran</td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <td>Uptown Funk</td>
+                            <td>Mark Ronson ft. Bruno Mars</td>
+                            <td>2014</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
+
+    <!-- Social Media Links Table -->
+    <div class="social-table-container">
+        <table class="social-table">
+            <tr>
+                <td>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
